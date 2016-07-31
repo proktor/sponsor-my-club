@@ -2,6 +2,8 @@
 
 const express = require('express');
 const logger = require('./logger');
+const httpProxy = require('http-proxy');
+const apiProxy = httpProxy.createProxyServer();
 
 const argv = require('minimist')(process.argv.slice(2));
 const setup = require('./middlewares/frontendMiddleware');
@@ -11,7 +13,9 @@ const resolve = require('path').resolve;
 const app = express();
 
 // If you need a backend, e.g. an API, add your custom backend-specific middleware here
-// app.use('/api', myApi);
+app.all('/api/*', function(req, res) {
+  apiProxy.web(req, res, {target: 'http://52.58.214.123'});
+});
 
 // In production we need to pass these values in instead of relying on webpack
 setup(app, {
