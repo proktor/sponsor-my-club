@@ -17,6 +17,9 @@ app.all('/api/*', function(req, res) {
   apiProxy.web(req, res, {target: 'http://52.58.214.123'});
 });
 
+//TODO serve static files!!!
+app.use('/static', express.static(resolve(process.cwd(), 'app/static')));
+
 // In production we need to pass these values in instead of relying on webpack
 setup(app, {
   outputPath: resolve(process.cwd(), 'build'),
