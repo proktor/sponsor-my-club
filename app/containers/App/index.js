@@ -12,8 +12,12 @@
  */
 
 import React from 'react';
+import Header from 'components/Header';
+import Footer from 'components/Footer';
+import {Layout, Content} from 'react-mdl';
 
 import styles from './styles.css';
+import 'static/styles/core.less';
 
 export default class App extends React.Component { // eslint-disable-line react/prefer-stateless-function
 
@@ -23,9 +27,13 @@ export default class App extends React.Component { // eslint-disable-line react/
 
   render() {
     return (
-      <div className={styles.container}>
-        {this.props.children}
-      </div>
+      <Layout>
+        <Content>
+          <Header />
+          { this.props.children }
+          <Footer />
+        </Content>
+      </Layout>
     );
   }
 }
