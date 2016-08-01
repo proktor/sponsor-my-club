@@ -1,1 +1,67 @@
-[]
+[
+  {
+    "id": "app.components.Header.about",
+    "defaultMessage": "Über uns",
+    "message": "About"
+  },
+  {
+    "id": "app.components.Header.sign",
+    "defaultMessage": "Anmelden / Registrieren",
+    "message": "Sign in / Sign up"
+  },
+  {
+    "id": "app.components.Header.start",
+    "defaultMessage": "Projekt starten",
+    "message": "Start Project"
+  },
+  {
+    "id": "app.components.Header.support",
+    "defaultMessage": "Projekt unterstützen",
+    "message": "Support Project"
+  },
+  {
+    "id": "app.components.HomePage.intro",
+    "defaultMessage": "Sponsor My Club vereint den Amateur- und Breitensport mit den vielen Unterstützern und lokalen Unternehmen.",
+    "message": ""
+  },
+  {
+    "id": "app.components.HomePage.start",
+    "defaultMessage": "Projekt starten",
+    "message": "Start Project"
+  },
+  {
+    "id": "app.components.HomePage.support",
+    "defaultMessage": "Projekt unterstützen",
+    "message": "Support Project"
+  },
+  {
+    "id": "app.components.HomePage.welcome",
+    "defaultMessage": "Willkommen beim ersten sozialen Marktplatz für den Amateursport",
+    "message": ""
+  },
+  {
+    "id": "app.components.LocaleToggle.de",
+    "defaultMessage": "de",
+    "message": ""
+  },
+  {
+    "id": "app.components.LocaleToggle.en",
+    "defaultMessage": "en",
+    "message": ""
+  },
+  {
+    "id": "app.components.NotFoundPage.header",
+    "defaultMessage": "This is NotFoundPage component !",
+    "message": ""
+  },
+  {
+    "id": "app.containers.ProductPage.header",
+    "defaultMessage": "This is ProductPage container !",
+    "message": ""
+  },
+  {
+    "id": "boilerplate.components.Footer.start.project",
+    "defaultMessage": "So startest du dein eigenes Projekt",
+    "message": ""
+  }
+]
