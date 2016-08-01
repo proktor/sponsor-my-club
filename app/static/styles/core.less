@@ -1,0 +1,210 @@
+:global {
+
+  // @import './assets/normalize.css';
+  @import './assets/typography.less';
+
+  @smc_blue: #2a47b5;
+  @smc_pinky-red: #fe204a;
+  @smc_aqua-marine: #50e3c2;
+  @smc_cool-grey: #909da4;
+  @smc_dark-grey: #2d3133;
+  @smc_marigold: #ffc202;
+  @white: #f6f6f6;
+  @gunmetal: #586064;
+  @text_color: #464d51;
+
+  html {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: @text_color;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  .Yorkten-ConReg {
+    font-family: Yorkten-ConReg;
+    font-weight: normal;
+    font-style: normal;
+  }
+  .Yorkten-NorBoo {
+    font-family: Yorkten-NorBoo;
+    font-weight: normal;
+    font-style: normal;
+  }
+  .Yorkten-ConBol {
+    font-family: Yorkten-ConBol;
+    font-weight: normal;
+    font-style: normal;
+  }
+  .Yorkten-ConLig {
+    font-family: Yorkten-ConLig;
+    font-weight: normal;
+    font-style: normal;
+  }
+  .Yorkten-ConDem {
+    font-family: Yorkten-ConDem;
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  /* Text styles */
+
+  .project_title {
+    font-family: Yorkten-ConBol;
+    font-size: 30px;
+    font-weight: normal;
+    color: @smc_blue;
+  }
+
+  .text {
+    font-family: Yorkten-ConReg;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .copy {
+    font-family: Yorkten-NorBoo;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.63;
+    color: @smc_cool-grey;
+  }
+
+  .breadcrum_navigation {
+    font-family: Yorkten-ConLig;
+    font-size: 12px;
+    font-weight: normal;
+    color: @gunmetal;
+  }
+
+  /* helpers */
+
+  .mdl-grid {
+    max-width: 1008px;
+    margin: 0 auto;
+  }
+
+  .mdl-grid.grid-small {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  .h1 {
+    font-family: Yorkten-ConBol;
+    font-size: 40px;
+    font-weight: normal;
+    color: @white;
+  }
+
+  .h2 {
+    font-family: Yorkten-ConDem;
+    font-size: 30px;
+    font-weight: normal;
+    color: @smc_blue;
+  }
+
+  .h3 {
+    font-family: Yorkten-ConReg;
+    font-size: 24px;
+    font-weight: normal;
+    color: @gunmetal;
+  }
+
+  .mdl-button {
+    font-family: Yorkten-ConDem;
+    font-size: 16px;
+    color: @text_color;
+    text-transform: none;
+    border: 1px solid;
+    &.mdl-button--raised {
+      border: none;
+    }
+    &.btn-big {
+      height: 50px;
+      line-height: 50px;
+      min-width: 230px;
+    }
+  }
+  
+  .mdl-mega-footer, .mdl-mega-footer__heading {
+    color: #50e3c2;
+    font-size: 16px;
+  }
+  .mdl-mega-footer__link-list a {
+    color: #9cd0b1;
+    font-size: 14px;
+  }
+  .mdl-footer-logo {
+    margin-bottom: 16px;
+  }
+  .mdl-mega-footer__bottom-section .mdl-mega-footer__link-list li {
+    float: none;
+    display: inline-block;
+  }
+  @media screen and (min-width: 1024px){
+
+    .mdl-mega-footer__drop-down-section {
+      width: 33.3%;
+    }
+  }
+
+  .underline::after {
+    content: '';
+    display: block;
+    border-top: 1px solid;
+    margin-bottom: 2em;
+  }
+
+  section {
+    padding: 2em 0 3em;
+  }
+
+  .section-grey {
+    background-color: @white;
+  }
+
+
+  .color-white {
+    color: #ffffff;
+  }
+
+  .align-center {
+    text-align: center;
+  }
+
+  .align-left {
+    text-align: left;
+  }
+
+  .lowercase {
+    text-transform: lowercase;
+  }
+
+  .uppercase {
+    text-transform: uppercase;
+  }
+
+  .font-20 {
+    font-size: 20px;
+  }
+
+  .font-18 {
+    font-size: 18px;
+  }
+
+  .font-12 {
+    font-size: 12px;
+  }
+}
