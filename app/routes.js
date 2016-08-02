@@ -22,12 +22,16 @@ export default function createRoutes(store) {
       name: 'home',
       getComponent(nextState, cb) {
         const importModules = Promise.all([
+          System.import('containers/ProjectList/reducer'),
+          System.import('containers/ProjectList/sagas'),
           System.import('containers/HomePage'),
         ]);
 
         const renderRoute = loadModule(cb);
 
-        importModules.then(([component]) => {
+        importModules.then(([reducer, sagas, component]) => {
+          injectReducer('projectList', reducer.default);
+          injectSagas(sagas.default);
           renderRoute(component);
         });
 
@@ -47,6 +51,26 @@ export default function createRoutes(store) {
 
         importModules.then(([reducer, sagas, component]) => {
           injectReducer('productPage', reducer.default);
+          injectSagas(sagas.default);
+          renderRoute(component);
+        });
+
+        importModules.catch(errorLoading);
+      },
+    }, {
+      path: '/projectList',
+      name: 'projectList',
+      getComponent(nextState, cb) {
+        const importModules = Promise.all([
+          System.import('containers/ProjectList/reducer'),
+          System.import('containers/ProjectList/sagas'),
+          System.import('containers/ProjectList'),
+        ]);
+
+        const renderRoute = loadModule(cb);
+
+        importModules.then(([reducer, sagas, component]) => {
+          injectReducer('projectList', reducer.default);
           injectSagas(sagas.default);
           renderRoute(component);
         });

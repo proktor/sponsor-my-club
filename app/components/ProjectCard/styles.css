@@ -1,0 +1,6 @@
+.projectCard { /* stylelint-ignore */
+  display: inline-flex;
+  width: 270px;
+  height: 550px;
+  margin: 2em 1em;
+}

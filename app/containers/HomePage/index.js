@@ -19,6 +19,9 @@ import messages from './messages';
 import styles from './styles.less';
 import Img from 'components/Img';
 import {Grid, Cell, Checkbox, Button, TextField} from 'react-mdl';
+import ProjectList from 'containers/ProjectList';
+import ProductPage from 'containers/ProductPage';
+import NotFoundPage from 'containers/NotFoundPage';
 
 const l = (a) => (a);
 
@@ -124,11 +127,12 @@ export class HomePage extends React.Component { // eslint-disable-line react/pre
           </Grid>
         </section>
         <section className='section-grey'>
-          <Grid className='grid-small align-center'>
+          <Grid className='align-center'>
             <Cell col={12}>
               <h3 className='h3'>{ l('Neues im Blog') }</h3>
             </Cell>
             <Cell col={12}>
+              {<ProjectList />}
             </Cell>
           </Grid>
         </section>
